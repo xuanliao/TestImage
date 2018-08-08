@@ -1,0 +1,14 @@
+== Redmine Zenedit plugin changelog
+
+Redmine Zenedit plugin - Textareas fullscreen edit mode for redmine
+Copyright (C) 2011-2018 RedmineUP
+http://www.redmineup.com/
+
+== 2018-03-19 v0.0.3
+
+* Fullscreen buttons panel
+
+== 2013-05-04 v0.0.2
+
+* Font size for fullscreen mode changed to 18px
+* English tranlsation fixes

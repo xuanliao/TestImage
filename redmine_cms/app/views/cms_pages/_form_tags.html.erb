@@ -1,0 +1,28 @@
+<span class="cms-page-tags-edit">
+  <%= select_tag 'page[tag_list]', options_from_collection_for_select(@page.tags, 'name', 'name', @page.tags.map(&:name)), :multiple => true, :style => 'width: 100%' %>
+</span>
+
+<% content_for :header_tags do %>
+  <%= select2_assets %>
+<% end %>
+
+<%= javascript_tag do %>
+  $(document).ready(function(){
+    $('#page_tag_list').select2({
+      ajax: {
+              url: '<%= auto_complete_cms_page_tags_path(names: true) %>',
+              dataType: 'json',
+              delay: 250,
+              data: function (params) {
+                return { q: params.term };
+              },
+              processResults: function (data, params) {
+                return { results: data };
+              },
+              cache: true
+            },
+      tags: true,
+      placeholder: '+ add tag'
+    });
+  })
+<% end %>

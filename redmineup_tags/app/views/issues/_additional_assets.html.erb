@@ -1,0 +1,4 @@
+<% content_for :header_tags do %>
+  <%= select2_assets %>
+  <%= javascript_tag "var tagAutocompletePath = '#{auto_complete_redmine_tags_url}';" %>
+<% end %>

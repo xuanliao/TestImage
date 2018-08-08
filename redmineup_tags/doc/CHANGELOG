@@ -1,0 +1,26 @@
+== Redmine Tags plugin changelog
+
+Redmine Tags plugin - Tags board plugin for redmine
+Copyright (C) 2011-2018 RedmineUP
+http://www.redmineup.com/
+
+== 2018-03-21 v2.0.2
+
+* Redmine 4 support
+* Adding tags from issue's context menu
+* Added new permissions for Add and Create new tags in a project
+* Suggestion order setting for tags autocomplete (Name, Last created, Most used)
+* Prevent adding commas
+* Fixed issues list tags column formating
+
+== 2017-09-21 v2.0.1
+
+* Fixed issue import error
+
+== 2017-07-24 v2.0.0
+
+* select2 control
+* redmine_crm gem for tags
+* Admin settings link
+* Alphabet sorting view for list
+* Merging tags fixes
